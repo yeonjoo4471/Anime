@@ -1,19 +1,40 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const closeMenu = () => setMenuOpen(false)
+
   return (
-    <header>
-      <div className='header_i'>
-        <h1 className='logo'>
-          <Link to="/"> LOGO </Link>
-        </h1>
-        <ul>
-          <li><Link to="/Sub1">menu-1</Link></li>
-          <li><a href="#">menu-2</a></li>
-          <li><a href="#">menu-3</a></li>
-          <li><a href="#">menu-4</a></li>
-        </ul>
+    <header className="site-header">
+      <div className="header-inner">
+        <Link className="brand" to="/" onClick={closeMenu} aria-label="ANIME GOODS 홈">
+          <span className="brand-mark">
+            A!
+          </span>
+          <strong>
+            ANIME<br />GOODS
+          </strong>
+        </Link>
+
+        <button
+          className="menu-toggle"
+          type="button"
+          aria-label="메뉴 열기"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((open) => !open)}>
+          <span></span><span></span>
+        </button>
+
+        <nav className={menuOpen ? 'is-open' : ''} aria-label="주요 메뉴">
+          <NavLink to="/" end onClick={closeMenu}>HOME</NavLink>
+          <NavLink to="/goods" onClick={closeMenu}>GOODS</NavLink>
+          <Link to="/?section=about" onClick={closeMenu}>ABOUT</Link>
+        </nav>
+
+        <p className="header-label">
+          ANIME GOODS<br />SELECT SHOP
+        </p>
       </div>
     </header>
   )

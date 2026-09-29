@@ -4,49 +4,49 @@ const series = [
   { 
     name: '은혼', 
     english: 'GINTAMA', 
-    image: '/Anime/img/button_img1.webp', 
+    image: '/img/button_img1.webp', 
     count: '11' 
   },
 
   { 
     name: '블리치', 
     english: 'BLEACH', 
-    image: '/Anime/img/button_img2.jpg', 
+    image: '/img/button_img2.jpg', 
     count: '07' 
   },
 
   { 
     name: '나루토', 
     english: 'NARUTO', 
-    image: '/Anime/img/button_img3.webp', 
+    image: '/img/button_img3.webp', 
     count: '08' 
   },
 
   { 
     name: '주술회전', 
     english: 'JUJUTSU KAISEN', 
-    image: '/Anime/img/button_img4.webp', 
+    image: '/img/button_img4.webp', 
     count: '04' 
   },
 
   { 
     name: '귀멸의 칼날', 
     english: 'DEMON SLAYER', 
-    image: '/Anime/img/button_img5.webp', 
+    image: '/img/button_img5.webp', 
     count: '13' 
   },
 
   { 
     name: '진격의 거인', 
     english: 'ATTACK ON TITAN', 
-    image: '/Anime/img/button_img6.webp', 
+    image: '/img/button_img6.webp', 
     count: '04' 
   },
 
   { 
     name: '사이키 쿠스오의 재난', 
     english: 'THE DISASTROUS LIFE OF SAIKI K.', 
-    image: '/Anime/img/button_img7.webp', 
+    image: '/img/button_img7.webp', 
     count: '03' 
   },
 ]
@@ -73,19 +73,19 @@ const Home = () => {
 
         <div className="hero-collage" aria-label="다양한 애니메이션 굿즈 미리보기">
           <figure className="hero-tile hero-tile--wide">
-            <img src="/Anime/img/button_img1.webp" alt="은혼 캐릭터 굿즈" />
+            <img src="/img/button_img1.webp" alt="은혼 캐릭터 굿즈" />
             <figcaption>GINTAMA</figcaption>
           </figure>
           <figure className="hero-tile">
-            <img src="/Anime/img/button_img2.jpg" alt="블리치 캐릭터 굿즈" />
+            <img src="/img/button_img2.jpg" alt="블리치 캐릭터 굿즈" />
             <figcaption>BLEACH</figcaption>
           </figure>
           <figure className="hero-tile">
-            <img src="/Anime/img/button_img3.webp" alt="나루토 캐릭터 굿즈" />
+            <img src="/img/button_img3.webp" alt="나루토 캐릭터 굿즈" />
             <figcaption>NARUTO</figcaption>
           </figure>
           <figure className="hero-tile hero-tile--wide">
-            <img src="/Anime/img/button_img4.webp" alt="주술회전 캐릭터 굿즈" />
+            <img src="/img/button_img4.webp" alt="주술회전 캐릭터 굿즈" />
             <figcaption>JUJUTSU KAISEN</figcaption>
           </figure>
           <span className="hero-count">
@@ -142,7 +142,7 @@ const Home = () => {
 
       <section className="spotlight" aria-labelledby="spotlight-title">
         <div className="spotlight__image">
-          <img src="/Anime/img/banner1.jpg" alt="블리치 룩업 피규어 배너" />
+          <img src="/img/banner1.jpg" alt="블리치 룩업 피규어 배너" />
         </div>
         <div className="spotlight__copy">
           <p className="kicker kicker--light">

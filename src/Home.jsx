@@ -1,52 +1,54 @@
 import { Link } from 'react-router-dom'
 
+const BASE_URL = import.meta.env.BASE_URL
+
 const series = [
   { 
     name: '은혼', 
     english: 'GINTAMA', 
-    image: '/img/button_img1.webp', 
+    image: `${BASE_URL}img/button_img1.webp`, 
     count: '11' 
   },
 
   { 
     name: '블리치', 
     english: 'BLEACH', 
-    image: '/img/button_img2.jpg', 
+    image: `${BASE_URL}img/button_img2.jpg`, 
     count: '07' 
   },
 
   { 
     name: '나루토', 
     english: 'NARUTO', 
-    image: '/img/button_img3.webp', 
+    image: `${BASE_URL}img/button_img3.webp`, 
     count: '08' 
   },
 
   { 
     name: '주술회전', 
     english: 'JUJUTSU KAISEN', 
-    image: '/img/button_img4.webp', 
+    image: `${BASE_URL}img/button_img4.webp`, 
     count: '04' 
   },
 
   { 
     name: '귀멸의 칼날', 
     english: 'DEMON SLAYER', 
-    image: '/img/button_img5.webp', 
+    image: `${BASE_URL}img/button_img5.webp`, 
     count: '13' 
   },
 
   { 
     name: '진격의 거인', 
     english: 'ATTACK ON TITAN', 
-    image: '/img/button_img6.webp', 
+    image: `${BASE_URL}img/button_img6.webp`, 
     count: '04' 
   },
 
   { 
     name: '사이키 쿠스오의 재난', 
     english: 'THE DISASTROUS LIFE OF SAIKI K.', 
-    image: '/img/button_img7.webp', 
+    image: `${BASE_URL}img/button_img7.webp`, 
     count: '03' 
   },
 ]
@@ -73,19 +75,19 @@ const Home = () => {
 
         <div className="hero-collage" aria-label="다양한 애니메이션 굿즈 미리보기">
           <figure className="hero-tile hero-tile--wide">
-            <img src="/img/button_img1.webp" alt="은혼 캐릭터 굿즈" />
+            <img src={`${BASE_URL}img/button_img1.webp`} alt="은혼 캐릭터 굿즈" />
             <figcaption>GINTAMA</figcaption>
           </figure>
           <figure className="hero-tile">
-            <img src="/img/button_img2.jpg" alt="블리치 캐릭터 굿즈" />
+            <img src={`${BASE_URL}img/button_img2.jpg`} alt="블리치 캐릭터 굿즈" />
             <figcaption>BLEACH</figcaption>
           </figure>
           <figure className="hero-tile">
-            <img src="/img/button_img3.webp" alt="나루토 캐릭터 굿즈" />
+            <img src={`${BASE_URL}img/button_img3.webp`} alt="나루토 캐릭터 굿즈" />
             <figcaption>NARUTO</figcaption>
           </figure>
           <figure className="hero-tile hero-tile--wide">
-            <img src="/img/button_img4.webp" alt="주술회전 캐릭터 굿즈" />
+            <img src={`${BASE_URL}img/button_img4.webp`} alt="주술회전 캐릭터 굿즈" />
             <figcaption>JUJUTSU KAISEN</figcaption>
           </figure>
           <span className="hero-count">
@@ -142,7 +144,7 @@ const Home = () => {
 
       <section className="spotlight" aria-labelledby="spotlight-title">
         <div className="spotlight__image">
-          <img src="/img/banner1.jpg" alt="블리치 룩업 피규어 배너" />
+          <img src={`${BASE_URL}img/banner1.jpg`} alt="블리치 룩업 피규어 배너" />
         </div>
         <div className="spotlight__copy">
           <p className="kicker kicker--light">

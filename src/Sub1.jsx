@@ -6,12 +6,14 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import { filters, products } from './products'
 
+const BASE_URL = import.meta.env.BASE_URL
+
 const banners = [
-  { image: '/img/banner1.jpg', alt: '블리치 룩업 피규어 컬렉션' },
-  { image: '/img/banner2.jpg', alt: '나루토 메가캣 프로젝트 컬렉션' },
-  { image: '/img/banner3.jpg', alt: '사이키 쿠스오의 재난 룩업 컬렉션' },
-  { image: '/img/banner4.jpg', alt: '괴수 8호 나루미 겐 룩업 컬렉션' },
-  { image: '/img/banner5.jpg', alt: '헌터×헌터 룩업 컬렉션' },
+  { image: `${BASE_URL}img/banner1.jpg`, alt: '블리치 룩업 피규어 컬렉션' },
+  { image: `${BASE_URL}img/banner2.jpg`, alt: '나루토 메가캣 프로젝트 컬렉션' },
+  { image: `${BASE_URL}img/banner3.jpg`, alt: '사이키 쿠스오의 재난 룩업 컬렉션' },
+  { image: `${BASE_URL}img/banner4.jpg`, alt: '괴수 8호 나루미 겐 룩업 컬렉션' },
+  { image: `${BASE_URL}img/banner5.jpg`, alt: '헌터×헌터 룩업 컬렉션' },
 ]
 
 const ITEMS_PER_PAGE = 16
